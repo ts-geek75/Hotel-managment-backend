@@ -19,9 +19,9 @@ app.use(
     watchPg: true,
     graphiql: true,
     enhanceGraphiql: true,
-    pgDefaultRole: "postgres", // optional: your default DB role
-    disableQueryLog: false,     // optional: show queries in console
-    ignoreRBAC: false,          // optional: enforce role-based access
+    pgDefaultRole: "postgres",
+    disableQueryLog: false,   
+    ignoreRBAC: false,          
   })
 );
 

@@ -66,6 +66,7 @@ const setUpDB = async () => {
         CREATE EXTENSION IF NOT EXISTS "uuid-ossp" WITH SCHEMA public;
         CREATE EXTENSION IF NOT EXISTS citext WITH SCHEMA public;
         CREATE EXTENSION IF NOT EXISTS pgcrypto WITH SCHEMA public;
+        
       `);
     } finally {
       ownerClient.release();
