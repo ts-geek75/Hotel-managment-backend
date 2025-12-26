@@ -2,10 +2,18 @@ import express from "express";
 import { postgraphile } from "postgraphile";
 import dotenv from "dotenv";
 import { LoginPlugin , RegisterPlugin } from "./plugin/auth"
+import cors from "cors";
 
 dotenv.config();
 
 const app = express();
+
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    credentials: true,
+  })
+);
 
 const databaseUrl = process.env.DATABASE_URL;
 
