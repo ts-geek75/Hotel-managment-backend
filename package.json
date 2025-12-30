@@ -16,6 +16,7 @@
     "@types/bcrypt": "^6.0.0",
     "@types/cors": "^2.8.19",
     "@types/node": "^25.0.3",
+    "@types/pdfkit": "^0.17.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
@@ -26,6 +27,7 @@
     "express": "^5.2.1",
     "graphile-migrate": "^1.4.1",
     "graphql": "^15.10.1",
+    "pdfkit": "^0.17.2",
     "postgraphile": "^4.14.1"
   }
 }

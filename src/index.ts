@@ -3,6 +3,7 @@ import { postgraphile } from "postgraphile";
 import dotenv from "dotenv";
 import { LoginPlugin , RegisterPlugin } from "./plugin/auth"
 import cors from "cors";
+import BookingPlugin from "./plugin/booking";
 
 dotenv.config();
 
@@ -23,7 +24,7 @@ if (!databaseUrl) {
 
 app.use(
   postgraphile(databaseUrl, "public", {
-    appendPlugins: [LoginPlugin, RegisterPlugin],
+    appendPlugins: [LoginPlugin, RegisterPlugin , BookingPlugin],
     watchPg: true,
     graphiql: true,
     enhanceGraphiql: true,
